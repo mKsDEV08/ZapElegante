@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Envelope from '@/components/Envelope'
 import { PhoneInput } from 'react-international-phone';
 import 'react-international-phone/style.css';
+import Head from 'next/head';
 
 const poppins_title = Poppins({
     weight: '200',
@@ -26,6 +27,13 @@ function Home() {
 
     return (
         <div className={poppins_title.className}>
+
+            <Head>
+                <title>Zap Elegante | 💘</title>
+                <meta name='description' content='Zap Elegante é um serviço de correio elegante via WhatsApp.' />
+                <meta name='keywords' content='zap, elegante, correio, whatsapp'/>
+            </Head>
+
             <div className='flex justify-center'>
                 <div className='text-4xl mt-2 text-zap'>
                     <div className="flex justify-center">
