@@ -3,7 +3,6 @@ import Image from 'next/image'
 import Envelope from '@/components/Envelope'
 import { PhoneInput } from 'react-international-phone';
 import 'react-international-phone/style.css';
-import DocumentMeta from 'react-document-meta';
 
 const poppins_title = Poppins({
     weight: '200',
@@ -11,18 +10,6 @@ const poppins_title = Poppins({
 })
 
 function Home() {
-
-    const meta = {
-        title: "Zap Elegante | 💘",
-        description: "Um serviço de correio elegante via WhatsApp", 
-        canonical: "https://zapelegante.mksdev08.online",
-        meta: {
-            charset: 'utf-8',
-            name: {
-                "google-site-verification": "mTjlHsd9avNYot4O6wKixWD9gQWlJIYxxYn_Ynmp-_c" 
-            }
-        }
-    }
 
     function anonymous() {
         const checkbox = document.getElementById('anonymous');
@@ -39,7 +26,6 @@ function Home() {
 
     return (
         <div className={poppins_title.className}>
-            <DocumentMeta {...meta} />
             <div className='flex justify-center'>
                 <div className='text-4xl mt-2 text-zap'>
                     <div className="flex justify-center">
