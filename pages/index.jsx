@@ -26,6 +26,7 @@ function Home() {
 
     return (
         <div className={poppins_title.className}>
+            <meta name="google-site-verification" content="mTjlHsd9avNYot4O6wKixWD9gQWlJIYxxYn_Ynmp-_c" />
             <title>Zap Elegante | 💘</title>
             <div className='flex justify-center'>
                 <div className='text-4xl mt-2 text-zap'>
