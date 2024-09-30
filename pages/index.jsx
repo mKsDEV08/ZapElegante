@@ -4,6 +4,7 @@ import Envelope from '@/components/Envelope'
 import { PhoneInput } from 'react-international-phone';
 import 'react-international-phone/style.css';
 import Head from 'next/head';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const poppins_title = Poppins({
     weight: '200',
@@ -33,6 +34,8 @@ function Home() {
                 <meta name='description' content='Zap Elegante é um serviço de correio elegante via WhatsApp.' />
                 <meta name='keywords' content='zap, elegante, correio, whatsapp'/>
             </Head>
+
+            <SpeedInsights />
 
             <div className='flex justify-center'>
                 <div className='text-4xl mt-2 text-zap'>
